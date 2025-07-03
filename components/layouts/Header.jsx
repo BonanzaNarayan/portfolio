@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
-  const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef(null);
 
   const links = [
     { label: 'Home', url: '#home' },
